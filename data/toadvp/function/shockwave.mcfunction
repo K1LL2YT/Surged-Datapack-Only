@@ -1,0 +1,1 @@
+execute as @a[tag=ToadPack] at @s run playsound voicelines:toadshockwaveactive neutral @s ~ ~ ~ 10000000000 1 1

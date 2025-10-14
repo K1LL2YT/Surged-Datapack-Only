@@ -1,0 +1,1 @@
+tellraw @a [{"bold":true,"color":"gold","italic":true,"text":"Datapack has been loaded!!! "},{"clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=LXbTdCCobDg"},"color":"red","hoverEvent":{"action":"show_text","value":[{"text":"This is a youtube link..."}]},"italic":true, "bold":false,"text":"Don't click here...","underlined":true}]

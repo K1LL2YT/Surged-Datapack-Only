@@ -1,0 +1,1 @@
+execute as @a[tag=KodexSarPack] at @s run playsound voicelines:kodexsarshockwaveactive neutral @s ~ ~ ~ 10000000000 1 1

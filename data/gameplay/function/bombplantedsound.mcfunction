@@ -1,0 +1,6 @@
+execute if score bomb bomb matches 1 run scoreboard players remove bombsound bomb 1
+execute as @e[tag=bomb] if score bombsound bomb matches ..0 at @s run playsound block.lever.click record @a ~ ~ ~ 0.5
+execute if score bombsound bomb matches ..0 if score round round > fastbomb round if score round round > fasterbomb round if score round round > fastestbomb round run scoreboard players set bombsound bomb 21
+execute if score bombsound bomb matches ..0 if score round round < fastbomb round if score round round > fasterbomb round if score round round > fastestbomb round run scoreboard players set bombsound bomb 11
+execute if score bombsound bomb matches ..0 if score round round < fastbomb round if score round round < fasterbomb round if score round round > fastestbomb round run scoreboard players set bombsound bomb 6
+execute if score bombsound bomb matches ..0 if score round round < fastbomb round if score round round < fasterbomb round if score round round < fastestbomb round run scoreboard players set bombsound bomb 3

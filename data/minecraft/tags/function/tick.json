@@ -1,0 +1,24 @@
+{
+    "values": [
+        "gameplay:tick",
+        "ui:kdtitle",
+        "ui:kd",
+        "ui:killtitle",
+        "gameplay:planting",
+        "gameplay:defusing",
+        "gameplay:round",
+        "gameplay:gamestuff",
+        "gameplay:countdown",
+        "gamefuntions:teamcount",
+        "tutorials:tnether",
+        "tutorials:toverworld",
+        "tutorials:tdoors",
+        "gameplay:bombplantedsound",
+        "gameplay:reconplant",
+        "gameplay:reconglowing",
+        "gamefuntions:ults",
+        "tutorials:ttreasure",
+        "tutorials:tswitchback",
+        "achievements:award"
+    ]
+}
