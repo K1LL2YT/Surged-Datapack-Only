@@ -1,8 +1,8 @@
-execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.3 with minecraft:armadillo_scute
-execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.8 with minecraft:compass
-execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.2 with minecraft:iron_nugget
-execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.1 with minecraft:gold_nugget
-execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.0 with minecraft:sunflower
+execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.3 with minecraft:armadillo_scute[custom_name='"Singleplayer (Coming Soon)"']
+execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.8 with minecraft:compass[custom_name='"Center Spawn"']
+execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.2 with minecraft:iron_nugget[custom_name='"Announcers"']
+execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.1 with minecraft:gold_nugget[custom_name='"Setting/Start Game"']
+execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.0 with minecraft:sunflower[custom_name='"Kit Selection"']
 execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s player.cursor with minecraft:air
 execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s weapon.offhand with minecraft:air
 execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.9 with minecraft:air
