@@ -20,7 +20,7 @@ execute as @a if score @s kills matches 30.. run advancement grant @s only minec
 #Ace
 execute as @a if score @s killstreak matches 5.. run advancement grant @s only minecraft:adventure/whos_the_pillager_now
 #Win a game
-execute as @a if score @s careerwins matches 5.. run advancement grant @s only minecraft:adventure/trade
+execute as @a if score @s careerwins matches 1.. run advancement grant @s only minecraft:adventure/trade
 #Win 5 games
 execute as @a if score @s careerwins matches 5.. run advancement grant @s only minecraft:adventure/sniper_duel
 #F*ck You Alex
