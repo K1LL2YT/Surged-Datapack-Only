@@ -24,6 +24,8 @@ gamemode adventure @a[team=!Admin,team=!spec,team=!Owner]
 gamemode spectator @a[team=spec]
 function timer:setup_timers
 
+clear @a[team=!Admin,team=!Owner]
+
 #First Game
 execute as @a run advancement grant @s only minecraft:adventure/ol_betsy
 

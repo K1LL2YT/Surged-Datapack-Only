@@ -1,7 +1,7 @@
 # Ults are activated using Fungus on a Stick
 
 ## Alt Timers
-execute as @a if score @s ult matches ..0 run item replace entity @s container.8 with minecraft:air
+execute as @a if score @s ult matches ..0 unless score playing playing matches 0 run item replace entity @s container.8 with minecraft:air
 execute as @a if score @s ult matches ..-1 run scoreboard players set @s ult 0
 execute as @a run scoreboard players remove @s ult 1
 

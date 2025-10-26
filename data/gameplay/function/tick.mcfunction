@@ -52,12 +52,13 @@ execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s rem
 execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s remove sword
 execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s add healer
 
-execute as @a[team=!spec,team=!Admin,team=!Owner,gamemode=!spectator] if score started started matches 0 at @s if block ~ ~0.1 ~ minecraft:water run damage @s 6 minecraft:generic_kill
+execute as @a[team=!spec,team=!Admin,team=!Owner,gamemode=!spectator] if score playing playing matches 1 unless score preround preround > preroundstop preround at @s if block ~ ~0.1 ~ minecraft:water run damage @s 6 minecraft:generic_kill
 
 scoreboard players set @a[team=spec] TeamPick 0
 scoreboard players set @a[team=Admin] TeamPick 3
 scoreboard players set @a[team=Purple] TeamPick 1
 scoreboard players set @a[team=Yellow] TeamPick 2
+execute as @e[type=item,name="Carrot on a Stick"] at @s if block ~ ~0.1 ~ minecraft:water run tp @s @r[team=Yellow,limit=1]
 execute as @e[type=item,name="Carrot on a Stick"] at @s if score @p TeamPick matches 1 unless block ~ ~-0.1 ~ air run data merge entity @s {PickupDelay:10000}
 execute as @e[type=item,name="Carrot on a Stick"] at @s if score @p TeamPick matches 2 unless block ~ ~-0.1 ~ air run data merge entity @s {PickupDelay:0}
 kill @e[type=item,name="Bow"]
@@ -73,6 +74,9 @@ kill @e[type=item,name="Warped Fungus on a Stick"]
 kill @e[type=item,name="Tropical Fish"]
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
+
+bossbar set minecraft:12 players @a
+bossbar set minecraft:12 name [{"text":"--- ","color":"gray"},{"text":"Purple | ","color":"dark_purple"},{"score":{"name":"Purple","objective":"Wins"},"color":"#d285ff","bold":true},{"text":" - ","bold":true,"color":"dark_gray"},{"score":{"name":"Yellow","objective":"Wins"},"color":"#fffeb4","bold":true},{"text":" | Yellow","color":"yellow"} ,{"text":" ---","color":"gray"}]
 
 execute if score mapselect mapselect matches 1 run time set night
 execute if score mapselect mapselect matches 1 run weather clear

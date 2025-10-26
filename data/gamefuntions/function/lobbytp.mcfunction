@@ -1,2 +1,3 @@
-tp @a -6 -36 -4
+tp @a -98 -59 90
 gamemode adventure @a
+scoreboard players set playing playing 0

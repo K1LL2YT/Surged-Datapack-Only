@@ -19,6 +19,7 @@
         "gamefuntions:ults",
         "tutorials:ttreasure",
         "tutorials:tswitchback",
-        "achievements:award"
+        "achievements:award",
+        "gamefuntions:lobbyitems"
     ]
 }

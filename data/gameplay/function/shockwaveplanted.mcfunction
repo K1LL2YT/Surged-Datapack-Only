@@ -17,3 +17,5 @@ execute as @a[tag=DefaultPack] at @s run function defaultvp:shockwave
 execute as @a[tag=ToadPack] at @s run function toadvp:shockwave
 execute as @a[tag=KodexSarPack] at @s run function kodexsarvp:shockwave
 execute as @a[tag=KodexSupPack] at @s run function kodexsupvp:shockwave
+execute as @a[tag=GamingGuyPack, team=Yellow] at @s run function gamingvp:shockwaveatt
+execute as @a[tag=GamingGuyPack, team=Purple] at @s run function gamingvp:shockwavedef

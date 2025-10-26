@@ -5,7 +5,6 @@ title @a times 0s 3s 3s
 title @a title {"text":"Defenders Take it Home","bold":true,"color":"dark_purple"}
 title @a subtitle {"text":"ɢɢ'ѕ","bold":true,"color":"gray"}
 execute as @a at @s run playsound minecraft:sfx.gameend record @s ~ ~ ~ 0.5
-scoreboard players set playing playing 0
 scoreboard players set Purple Wins 0
 scoreboard players set Yellow Wins 0
 schedule function ui:fadeui 5s append
@@ -34,5 +33,8 @@ execute as @a[team=Purple,tag=KodexSarPack] at @s run function kodexsarvp:gamewi
 
 execute as @a[team=Yellow,tag=KodexSupPack] at @s run function kodexsupvp:gameloseyellow
 execute as @a[team=Purple,tag=KodexSupPack] at @s run function kodexsupvp:gamewinpurple
+
+execute as @a[team=Yellow,tag=GamingGuyPack] at @s run function gamingvp:gameloseyellow
+execute as @a[team=Purple,tag=GamingGuyPack] at @s run function gamingvp:gamewinpurple
 
 # This is the same thing as the other wins... except its for the whole game.

@@ -36,3 +36,6 @@ execute as @a[team=Purple,tag=KodexSarPack] at @s run function kodexsarvp:losepu
 
 execute as @a[team=Yellow,tag=KodexSupPack] at @s run function kodexsupvp:winyellow
 execute as @a[team=Purple,tag=KodexSupPack] at @s run function kodexsupvp:losepurple
+
+execute as @a[team=Yellow,tag=GamingGuyPack] at @s run function gamingvp:winyellow
+execute as @a[team=Purple,tag=GamingGuyPack] at @s run function gamingvp:losepurple
