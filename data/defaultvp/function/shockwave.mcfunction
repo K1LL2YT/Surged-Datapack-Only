@@ -1,1 +1,1 @@
-execute as @a[tag=DefaultPack] at @s run playsound voicelines:defaultshockwaveactive neutral @s ~ ~ ~ 10000000000 1 1
+execute run playsound voicelines:defaultshockwaveactive neutral @s ~ ~ ~ 10000000000 1 1

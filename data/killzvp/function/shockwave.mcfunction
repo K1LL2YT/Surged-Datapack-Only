@@ -1,1 +1,1 @@
-execute as @a[tag=KillzPack] at @s run playsound voicelines:killzshockwaveactive neutral @s ~ ~ ~ 10000000000 1 1
+execute as @a[tag=KillzPack] run playsound voicelines:killzshockwaveactive neutral @s ~ ~ ~ 10000000000 1 1

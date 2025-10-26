@@ -1,1 +1,1 @@
-execute as @a[tag=GamingGuyPack, team=Purple] at @s run playsound voicelines:gamingshockwaveactivedef neutral @s ~ ~ ~ 10000000000 1 1
+execute run playsound voicelines:gamingshockwaveactivedef neutral @s ~ ~ ~ 10000000000 1 1

@@ -17,11 +17,11 @@ kill @e[name="Iron Nugget"]
 kill @e[name="Gold Nugget"]
 kill @e[name="Sunflower"]
 
-execute as @a if score @s kitspawn matches 1.. run item replace entity @s container.0 with minecraft:sunflower
-execute as @a if score @s settingspawn matches 1.. run item replace entity @s container.1 with minecraft:gold_nugget
-execute as @a if score @s announcerspawn matches 1.. run item replace entity @s container.2 with minecraft:iron_nugget
-execute as @a if score @s centerspawn matches 1.. run item replace entity @s container.8 with minecraft:compass
-execute as @a if score @s singlespawn matches 1.. run item replace entity @s container.3 with minecraft:armadillo_scute
+execute as @a if score @s kitspawn matches 1.. run item replace entity @s container.0 with minecraft:sunflower[custom_name='"Kit Selection"']
+execute as @a if score @s settingspawn matches 1.. run item replace entity @s container.1 with minecraft:gold_nugget[custom_name='"Setting/Start Game"']
+execute as @a if score @s announcerspawn matches 1.. run item replace entity @s container.2 with minecraft:iron_nugget[custom_name='"Announcers"']
+execute as @a if score @s centerspawn matches 1.. run item replace entity @s container.8 with minecraft:compass[custom_name='"Center Spawn"']
+execute as @a if score @s singlespawn matches 1.. run item replace entity @s container.3 with minecraft:armadillo_scute[custom_name='"Singleplayer (Coming Soon)"']
 
 execute as @a if score @s kitspawn matches 1.. run tp @s -91 -57 164 0 0
 execute as @a if score @s settingspawn matches 1.. run tp @s -144 -60 115 45 0
