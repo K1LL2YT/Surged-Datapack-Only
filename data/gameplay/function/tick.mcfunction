@@ -77,12 +77,3 @@ kill @e[type=spectral_arrow,nbt={inGround:1b}]
 
 bossbar set minecraft:12 players @a
 bossbar set minecraft:12 name [{"text":"--- ","color":"gray"},{"text":"Purple | ","color":"dark_purple"},{"score":{"name":"Purple","objective":"Wins"},"color":"#d285ff","bold":true},{"text":" - ","bold":true,"color":"dark_gray"},{"score":{"name":"Yellow","objective":"Wins"},"color":"#fffeb4","bold":true},{"text":" | Yellow","color":"yellow"} ,{"text":" ---","color":"gray"}]
-
-execute if score mapselect mapselect matches 1 run time set night
-execute if score mapselect mapselect matches 1 run weather clear
-execute if score mapselect mapselect matches 2 run time set noon
-execute if score mapselect mapselect matches 2 run weather clear
-execute if score mapselect mapselect matches 3 run time set midnight
-execute if score mapselect mapselect matches 3 run weather thunder
-execute if score mapselect mapselect matches 4 run time set noon
-execute if score mapselect mapselect matches 4 run weather clear

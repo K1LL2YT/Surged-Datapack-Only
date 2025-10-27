@@ -38,8 +38,7 @@ execute as @a[team=Yellow,tag=healer] if score @s click matches 1.. at @s run cl
 ## Quickcharge
 execute as @a[tag=quick] if score @s click matches 1.. at @s run help
 execute as @a[tag=quick] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
-execute as @a[tag=quick] if score @s ult matches 1.. at @s run item replace entity @s container.8 with crossbow[damage=465,charged_projectiles=[{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:poison"}}}]] 1
-execute as @a[tag=quick] if score @s click matches 1.. run scoreboard players set @s ult 100
+execute as @a[tag=quick] if score @s ult matches 1.. at @s run give @s crossbow[damage=465,charged_projectiles=[{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:poison"}}}]] 3
 
 ## Multishot
 execute as @a[tag=multi] if score @s click matches 1.. at @s run help

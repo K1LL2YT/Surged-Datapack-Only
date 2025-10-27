@@ -30,4 +30,13 @@ execute if score mapselect mapselect matches 3 run fill -153 -54 134 -153 -59 13
 execute if score mapselect mapselect matches 4 run fill -153 -54 134 -153 -59 134 minecraft:orange_stained_glass
 execute if score mapselect mapselect matches 5 run fill -153 -54 134 -153 -59 134 minecraft:red_stained_glass
 
+execute if score mapselect mapselect matches 1 run time set night
+execute if score mapselect mapselect matches 1 run weather clear
+execute if score mapselect mapselect matches 2 run time set noon
+execute if score mapselect mapselect matches 2 run weather clear
+execute if score mapselect mapselect matches 3 run time set midnight
+execute if score mapselect mapselect matches 3 run weather thunder
+execute if score mapselect mapselect matches 4 run time set noon
+execute if score mapselect mapselect matches 4 run weather clear
+
 fill -163 -59 144 -163 -55 132 air
