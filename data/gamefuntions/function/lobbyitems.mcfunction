@@ -1,3 +1,6 @@
+# This is the lobby items, and I'm not really going to explain this all.
+# Should be self explainatory though.
+
 execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.3 with minecraft:armadillo_scute[custom_name='"Singleplayer (Coming Soon)"']
 execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.8 with minecraft:compass[custom_name='"Center Spawn"']
 execute as @a[team=!Admin,team=!Owner] if score playing playing matches 0 if score tutorial tutorial = tutorialend tutorial run item replace entity @s container.2 with minecraft:iron_nugget[custom_name='"Announcers"']

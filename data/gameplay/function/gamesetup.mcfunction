@@ -1,4 +1,5 @@
 # Tp Plyaers
+
 ## Map 1
 execute as @a[team=Yellow] if score mapselect mapselect matches 1 at @s run tp 94.00 -35.00 -107.00
 execute as @a[team=Purple] if score mapselect mapselect matches 1 at @s run tp 12.00 -35.00 -107.00

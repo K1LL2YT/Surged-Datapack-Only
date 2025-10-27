@@ -1,3 +1,13 @@
+# ---------------
+#  Round System
+# ---------------
+# The Round system consist of both the Preround and the actual Round. To do this, it contains a scoreboard that helps get all
+# the timers in their place. Same goes for playing and started, which helps the game tell if the game and round is going at
+# that current moment.
+
+# OST is added later and the bomb is used to help tell which team wins. Pause is for pausing, should be simple to know.
+
+# Start Game
 execute as @a if score playing playing matches 0 at @s run effect give @a[team=!Admin,team=!Owner] weakness 1 255 true
 execute as @a if score playing playing matches 1 unless score preround preround = preroundstop preround at @s run effect give @a[team=!Admin,team=!Owner] weakness 1 255 true
 

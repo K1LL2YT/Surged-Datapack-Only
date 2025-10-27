@@ -1,3 +1,5 @@
+# Its a map select... WHAT ELSE DO YOU WANT?
+
 scoreboard players add mapselect mapselect 1
 
 execute if score mapselect mapselect matches 1 run tellraw @a ["",{"text":"----------","color":"gray"},{"text":"\n"},{"text":"Map Selected","italic":true},{"text":"\n"},{"text":"Nether","bold":true,"color":"red"},{"text":"\n"},{"text":"★★☆☆☆","bold":true,"color":"green"},{"text":"\n"},{"text":"----------","color":"gray"}]

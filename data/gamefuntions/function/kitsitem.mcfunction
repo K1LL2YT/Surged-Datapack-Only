@@ -1,4 +1,10 @@
-# Kit Items
+# --------------------
+#      Kit Items
+# --------------------
+# Kits are given based on their kits. This will also include the bombs and sheers needed to help them through the game.
+# Ults will also be given IF the player has gotten one in the previous rounds. However, using them will reset the ult
+# time. (Seen in ults.mcfunction)
+
 ## Healer
 execute as @a[tag=healer,team=!Admin,team=!Owner] at @s run give @s bow[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:infinity":1},show_in_tooltip:false},enchantment_glint_override=false] 1
 execute as @a[tag=healer,team=!Admin,team=!Owner] at @s run item replace entity @s container.9 with arrow[unbreakable={show_in_tooltip:false}] 1

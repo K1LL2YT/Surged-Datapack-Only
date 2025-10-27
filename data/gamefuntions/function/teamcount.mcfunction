@@ -1,5 +1,5 @@
-
-
+# This is to count the amount of team members to end the game IF all players on that team are dead.
+# I'm not going to go into detail about this, so just try your best.
 
 execute as @a[team=Purple] run scoreboard players set Purple TeamNumbers 0
 execute as @a[team=Purple] run scoreboard players add Purple TeamNumbers 1

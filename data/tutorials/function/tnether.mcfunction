@@ -1,3 +1,5 @@
+# Figure it out.
+
 execute if score mapselect mapselect matches 1 if score start tutorial matches 1 run scoreboard players set tutorial tutorial 701
 execute if score mapselect mapselect matches 1 if score start tutorial matches 1 run scoreboard players set ended tutorial 0
 execute if score mapselect mapselect matches 1 if score start tutorial matches 1 run scoreboard players set textstart tutorial 600

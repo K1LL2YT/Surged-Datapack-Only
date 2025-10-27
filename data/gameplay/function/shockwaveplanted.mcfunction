@@ -1,4 +1,4 @@
-title @a times 0s 3s 1s
+title @a times 0s 1s 1s
 title @a title {"text":"ѕʜᴏᴄᴋᴡᴀᴠᴇ ᴀᴄᴛɪᴠᴇ","bold":true,"color":"red"}
 stopsound @a
 execute as @a if score mapselect mapselect matches 1 at @s run playsound minecraft:ost.planted voice @s ~ ~ ~ 0.1

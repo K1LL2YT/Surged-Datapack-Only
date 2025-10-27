@@ -1,4 +1,8 @@
-# Ults are activated using Fungus on a Stick
+# --------
+#   Ults
+# --------
+# Ults are activated using Fungus on a Stick. Some will be using timers, while others will just be something that effects the players
+# regularly. Should be easy to understand when you see how this all works.
 
 ## Alt Timers
 execute as @a if score @s ult matches 0 unless score playing playing matches 0 run item replace entity @s container.8 with minecraft:air
@@ -59,6 +63,7 @@ execute as @a[tag=multi] if score @s click matches 1.. at @s run clear @s minecr
 execute as @a[tag=multi] if score @s ult matches 1.. at @s run item replace entity @s container.8 with crossbow[damage=465,charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:2,explosions:[{shape:"large_ball",colors:[I;16711680]}]}}}]] 1
 execute as @a[tag=multi] if score @s click matches 1.. run scoreboard players set @s ult 100
 
+# Reset
 execute as @a if score @s click matches 1.. run scoreboard players add @s careerults 1
 execute as @a if score @s click matches 1.. run scoreboard players set @s hasult 0
 execute as @a if score @s click matches 1.. run scoreboard players set @s ultkill 0

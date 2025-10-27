@@ -1,3 +1,6 @@
+# Im not explaining all of this... Just read it and good luck.
+
+# Teams stuff
 effect give @a saturation infinite 100 true
 execute as @a at @s if block ~ ~-1 ~ yellow_concrete_powder run team join Yellow
 execute as @a at @s if block ~ ~-1 ~ purple_concrete_powder run team join Purple
@@ -82,8 +85,10 @@ execute as @a[tag=!engineer] at @s if block ~ ~-1 ~ purple_terracotta run tag @s
 execute as @a[tag=!engineer] at @s if block ~ ~-1 ~ purple_terracotta run tag @s remove splasher
 execute as @a[tag=!engineer] at @s if block ~ ~-1 ~ purple_terracotta run tag @s add engineer
 
+# Water Damage
 execute as @a[team=!spec,team=!Admin,team=!Owner,gamemode=!spectator] if score playing playing matches 1 unless score preround preround > preroundstop preround at @s if block ~ ~0.1 ~ minecraft:water run damage @s 6 minecraft:generic_kill
 
+# Things that don't need a list.
 scoreboard players set @a[team=spec] TeamPick 0
 scoreboard players set @a[team=Admin] TeamPick 3
 scoreboard players set @a[team=Purple] TeamPick 1
