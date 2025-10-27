@@ -1,7 +1,7 @@
 # Ults are activated using Fungus on a Stick
 
 ## Alt Timers
-execute as @a if score @s ult matches ..0 unless score playing playing matches 0 run item replace entity @s container.8 with minecraft:air
+execute as @a if score @s ult matches 0 unless score playing playing matches 0 run item replace entity @s container.8 with minecraft:air
 execute as @a if score @s ult matches ..-1 run scoreboard players set @s ult 0
 execute as @a run scoreboard players remove @s ult 1
 
@@ -27,8 +27,8 @@ execute as @a[tag=sword] if score @s click matches 1.. at @s run effect give @s 
 execute as @a[tag=sword] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Engineer
-execute as @a[tag=sword] if score @s click matches 1.. at @s run effect give @s minecraft:speed 30 1 true
-execute as @a[tag=sword] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
+execute as @a[tag=engineer] if score @s click matches 1.. at @s run effect give @s minecraft:speed 30 1 true
+execute as @a[tag=engineer] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Healer
 ### Purple
@@ -41,11 +41,11 @@ execute as @a[team=Yellow,tag=healer] if score @s click matches 1.. at @s run cl
 
 ## Postion Master
 ### Purple
-execute as @a[team=Purple,tag=splasher] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:blindness 10 1 true
+execute as @a[team=Purple,tag=splasher] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:blindness 10 1 true
 execute as @a[team=Purple,tag=splasher] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ### Yellow
-execute as @a[team=Yellow,tag=splasher] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:blindness 10 1 true
+execute as @a[team=Yellow,tag=splasher] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:blindness 10 1 true
 execute as @a[team=Yellow,tag=splasher] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Quickcharge

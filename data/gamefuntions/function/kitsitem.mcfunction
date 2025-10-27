@@ -25,10 +25,10 @@ execute as @a[tag=sword,team=!Admin,team=!Owner] at @s run give @s potion[item_n
 
 ## Potion Master
 execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s stick[enchantments={levels:{"minecraft:sharpness":1}}] 1
-execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s lingering_potion[item_name='{"bold":true,"color":"#90b9cc","text":"Resistance Potion"}',potion_contents={custom_color:11654093,custom_effects:[{id:"minecraft:resistance",amplifier:1,duration:10}]}] 2
-execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s lingering_potion[item_name='{"bold":true,"color":"#6b9767","text":"Poison Potion"}',potion_contents={custom_color:8559490,custom_effects:[{id:"minecraft:poison",amplifier:0,duration:10}]}] 2
-execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s lingering_potion[item_name='{"bold":true,"color":"#303a66","text":"Poison Potion"}',potion_contents={custom_color:3690902,custom_effects:[{id:"minecraft:slowness",amplifier:0,duration:10}]}] 2
-execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s splash_potion[item_name='{"bold":true,"color":"#b4ccb1","text":"Invis Potion"}',potion_contents={custom_color:12432564,custom_effects:[{id:"minecraft:invisibility",amplifier:1,duration:1}]}] 1
+execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s lingering_potion[item_name='{"bold":true,"color":"#90b9cc","text":"Resistance Potion"}',potion_contents={custom_color:11654093,custom_effects:[{id:"minecraft:resistance",amplifier:1,duration:100}]}] 2
+execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s lingering_potion[item_name='{"bold":true,"color":"#6b9767","text":"Poison Potion"}',potion_contents={custom_color:8559490,custom_effects:[{id:"minecraft:poison",amplifier:0,duration:100}]}] 2
+execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s lingering_potion[item_name='{"bold":true,"color":"#303a66","text":"Slowness Potion"}',potion_contents={custom_color:3690902,custom_effects:[{id:"minecraft:slowness",amplifier:2,duration:100}]}] 2
+execute as @a[tag=splasher,team=!Admin,team=!Owner] at @s run give @s splash_potion[item_name='{"bold":true,"color":"#b4ccb1","text":"Invis Potion"}',potion_contents={custom_color:12432564,custom_effects:[{id:"minecraft:invisibility",amplifier:0,duration:200}]}] 1
 
 ## Engineer
 execute as @a[tag=engineer,team=!Admin,team=!Owner] at @s run give @s bow[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:infinity":1,"punch":1},show_in_tooltip:false},enchantment_glint_override=false] 1

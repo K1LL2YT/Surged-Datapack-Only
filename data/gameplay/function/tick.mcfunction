@@ -18,9 +18,9 @@ execute as @a[tag=!recon] at @s if block ~ ~-1 ~ cyan_terracotta run tag @s remo
 execute as @a[tag=!recon] at @s if block ~ ~-1 ~ cyan_terracotta run tag @s remove multi
 execute as @a[tag=!recon] at @s if block ~ ~-1 ~ cyan_terracotta run tag @s remove quick
 execute as @a[tag=!recon] at @s if block ~ ~-1 ~ cyan_terracotta run tag @s remove sword
-execute as @a[tag=!recon] at @s if block ~ ~-1 ~ cyan_terracotta run tag @s add recon
 execute as @a[tag=!recon] at @s if block ~ ~-1 ~ cyan_terracotta run tag @s remove splasher
 execute as @a[tag=!recon] at @s if block ~ ~-1 ~ cyan_terracotta run tag @s remove engineer
+execute as @a[tag=!recon] at @s if block ~ ~-1 ~ cyan_terracotta run tag @s add recon
 
 ## Multi-shot
 execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tellraw @s ["",{"text":"----------","color":"gray"},{"text":"\n"},{"text":"Kit Selected","italic":true},{"text":"\n"},{"text":"Multi-Shot","bold":true,"color":"red"},{"text":"\n"},{"text":"----------","color":"gray"}]
@@ -28,9 +28,9 @@ execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tag @
 execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tag @s remove recon
 execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tag @s remove quick
 execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tag @s remove sword
-execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tag @s add multi
 execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tag @s remove splasher
 execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tag @s remove engineer
+execute as @a[tag=!multi] at @s if block ~ ~-1 ~ light_blue_terracotta run tag @s add multi
 
 ## Quick Charge
 execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tellraw @s ["",{"text":"----------","color":"gray"},{"text":"\n"},{"text":"Kit Selected","italic":true},{"text":"\n"},{"text":"Quick Charge","bold":true,"color":"blue"},{"text":"\n"},{"text":"----------","color":"gray"}]
@@ -38,9 +38,9 @@ execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tag @
 execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tag @s remove recon
 execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tag @s remove multi
 execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tag @s remove sword
-execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tag @s add quick
 execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tag @s remove splasher
 execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tag @s remove engineer
+execute as @a[tag=!quick] at @s if block ~ ~-1 ~ light_gray_terracotta run tag @s add quick
 
 ## Melee
 execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tellraw @s ["",{"text":"----------","color":"gray"},{"text":"\n"},{"text":"Kit Selected","italic":true},{"text":"\n"},{"text":"Melee","bold":true,"color":"gold"},{"text":"\n"},{"text":"----------","color":"gray"}]
@@ -48,9 +48,9 @@ execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tag @s rem
 execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tag @s remove recon
 execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tag @s remove multi
 execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tag @s remove quick
-execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tag @s add sword
 execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tag @s remove splasher
 execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tag @s remove engineer
+execute as @a[tag=!sword] at @s if block ~ ~-1 ~ green_terracotta run tag @s add sword
 
 ## Healer
 execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tellraw @s ["",{"text":"----------","color":"gray"},{"text":"\n"},{"text":"Kit Selected","italic":true},{"text":"\n"},{"text":"Healer","bold":true,"color":"green"},{"text":"\n"},{"text":"----------","color":"gray"}]
@@ -58,9 +58,9 @@ execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s rem
 execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s remove multi
 execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s remove quick
 execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s remove sword
-execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s add healer
 execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s remove splasher
 execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s remove engineer
+execute as @a[tag=!healer] at @s if block ~ ~-1 ~ lime_terracotta run tag @s add healer
 
 ## Potion Master
 execute as @a[tag=!splasher] at @s if block ~ ~-1 ~ orange_terracotta run tellraw @s ["",{"text":"----------","color":"gray"},{"text":"\n"},{"text":"Kit Selected","italic":true},{"text":"\n"},{"text":"Potion Master","bold":true,"color":"#a57ebe"},{"text":"\n"},{"text":"----------","color":"gray"}]
@@ -69,8 +69,8 @@ execute as @a[tag=!splasher] at @s if block ~ ~-1 ~ orange_terracotta run tag @s
 execute as @a[tag=!splasher] at @s if block ~ ~-1 ~ orange_terracotta run tag @s remove quick
 execute as @a[tag=!splasher] at @s if block ~ ~-1 ~ orange_terracotta run tag @s remove sword
 execute as @a[tag=!splasher] at @s if block ~ ~-1 ~ orange_terracotta run tag @s remove healer
-execute as @a[tag=!splasher] at @s if block ~ ~-1 ~ orange_terracotta run tag @s add splasher
 execute as @a[tag=!splasher] at @s if block ~ ~-1 ~ orange_terracotta run tag @s remove engineer
+execute as @a[tag=!splasher] at @s if block ~ ~-1 ~ orange_terracotta run tag @s add splasher
 
 ## Engineer
 execute as @a[tag=!engineer] at @s if block ~ ~-1 ~ purple_terracotta run tellraw @s ["",{"text":"----------","color":"gray"},{"text":"\n"},{"text":"Kit Selected","italic":true},{"text":"\n"},{"text":"Engineer","bold":true,"color":"#cf6b43"},{"text":"\n"},{"text":"----------","color":"gray"}]
