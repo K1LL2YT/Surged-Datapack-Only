@@ -1,5 +1,6 @@
 # Planting
-execute as @a at @s if items entity @s[scores={sneaktime=1}] weapon.mainhand minecraft:carrot_on_a_stick if block ~ -46 ~ minecraft:red_terracotta unless block ~ ~-0.1 ~ air run scoreboard players add @s planting 1
+execute as @a at @s if items entity @s[scores={sneaktime=1}] weapon.mainhand minecraft:carrot_on_a_stick if block ~ -46 ~ minecraft:red_terracotta unless block ~ ~-0.1 ~ air unless entity @s[tag=engineer] run scoreboard players add @s planting 1
+execute as @a at @s if items entity @s[scores={sneaktime=1}] weapon.mainhand minecraft:carrot_on_a_stick if block ~ -46 ~ minecraft:red_terracotta unless block ~ ~-0.1 ~ air if entity @s[tag=engineer] run scoreboard players add @s planting 3
 execute as @a[scores={sneaktime=0}] at @s run scoreboard players set @s planting 0
 
 

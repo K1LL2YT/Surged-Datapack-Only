@@ -26,6 +26,10 @@ execute as @a[team=Purple,tag=recon] if score @s click matches 1.. at @s run cle
 execute as @a[tag=sword] if score @s click matches 1.. at @s run effect give @s minecraft:strength 5 1 true
 execute as @a[tag=sword] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
+## Engineer
+execute as @a[tag=sword] if score @s click matches 1.. at @s run effect give @s minecraft:speed 30 1 true
+execute as @a[tag=sword] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
+
 ## Healer
 ### Purple
 execute as @a[team=Purple,tag=healer] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:regeneration 20 1 true
@@ -34,6 +38,15 @@ execute as @a[team=Purple,tag=healer] if score @s click matches 1.. at @s run cl
 ### Yellow
 execute as @a[team=Yellow,tag=healer] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:regeneration 20 1 true
 execute as @a[team=Yellow,tag=healer] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
+
+## Postion Master
+### Purple
+execute as @a[team=Purple,tag=splasher] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:blindness 10 1 true
+execute as @a[team=Purple,tag=splasher] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
+
+### Yellow
+execute as @a[team=Yellow,tag=splasher] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:blindness 10 1 true
+execute as @a[team=Yellow,tag=splasher] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Quickcharge
 execute as @a[tag=quick] if score @s click matches 1.. at @s run help

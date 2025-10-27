@@ -1,5 +1,6 @@
 # Defusing
-execute as @a at @s if items entity @s weapon.mainhand minecraft:shears at @e[type=armor_stand,distance=0..1.5,tag=bomb] run scoreboard players add @s defusing 1
+execute as @a at @s if items entity @s weapon.mainhand minecraft:shears at @e[type=armor_stand,distance=0..1.5,tag=bomb] unless entity @s[tag=engineer] run scoreboard players add @s defusing 1
+execute as @a at @s if items entity @s weapon.mainhand minecraft:shears at @e[type=armor_stand,distance=0..1.5,tag=bomb] if entity @s[tag=engineer] run scoreboard players add @s defusing 3
 execute as @a at @e[type=armor_stand,sort=nearest,limit=1,tag=bomb] if entity @s[distance=1.5..] run scoreboard players reset @s defusing
 execute as @a at @e[type=armor_stand,sort=nearest,limit=1,tag=bomb] if entity @s[distance=..1.5] unless items entity @s weapon.mainhand minecraft:shears run scoreboard players reset @s defusing
 
