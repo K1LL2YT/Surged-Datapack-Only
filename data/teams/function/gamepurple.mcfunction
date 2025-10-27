@@ -1,14 +1,16 @@
 stopsound @a
 schedule clear gameplay:gamesetup
 schedule clear ui:fadeui
+schedule clear gameplay:switchsides
 title @a times 0s 3s 3s
-title @a title {"text":"Defenders Take it Home","bold":true,"color":"dark_purple"}
+title @a title {"text":"Purple Take it Home","bold":true,"color":"dark_purple"}
 title @a subtitle {"text":"ɢɢ'ѕ","bold":true,"color":"gray"}
 execute as @a at @s run playsound minecraft:sfx.gameend record @s ~ ~ ~ 0.5
 scoreboard players set Purple Wins 0
 scoreboard players set Yellow Wins 0
 schedule function ui:fadeui 5s append
-schedule function elo:calculate 5s append
+execute if score EloGame Gamemodes matches 1 run schedule function elo:calculate 5s append
+execute if score EloGame Gamemodes matches 0 run schedule function elo:showstats 5s append
 schedule function gamefuntions:lobbytp 6s append
 execute as @a run scoreboard players set @s hasult 0
 execute as @a run scoreboard players set @s ultkill 0

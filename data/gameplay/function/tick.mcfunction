@@ -91,9 +91,9 @@ execute as @a[team=!spec,team=!Admin,team=!Owner,gamemode=!spectator] if score p
 # Things that don't need a list.
 scoreboard players set @a[team=spec] TeamPick 0
 scoreboard players set @a[team=Admin] TeamPick 3
-scoreboard players set @a[team=Purple] TeamPick 1
-scoreboard players set @a[team=Yellow] TeamPick 2
-execute as @e[type=item,name="Carrot on a Stick"] at @s if block ~ ~0.1 ~ minecraft:water run tp @s @r[team=Yellow,limit=1]
+scoreboard players set @a[tag=defender] TeamPick 1
+scoreboard players set @a[tag=attacker] TeamPick 2
+execute as @e[type=item,name="Carrot on a Stick"] at @s if block ~ ~0.1 ~ minecraft:water run tp @s @r[tag=attacker,limit=1]
 execute as @e[type=item,name="Carrot on a Stick"] at @s if score @p TeamPick matches 1 unless block ~ ~-0.1 ~ air run data merge entity @s {PickupDelay:10000}
 execute as @e[type=item,name="Carrot on a Stick"] at @s if score @p TeamPick matches 2 unless block ~ ~-0.1 ~ air run data merge entity @s {PickupDelay:0}
 kill @e[type=item,name="Bow"]
@@ -111,6 +111,10 @@ kill @e[type=item,name="Warped Fungus on a Stick"]
 kill @e[type=item,name="Tropical Fish"]
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
+
+execute as @a[team=!Admin,team=!Owner] if score playing playing matches 1 if score @s InGame matches 0 run team join spec @s
+execute as @a[team=!Admin,team=!Owner] if score playing playing matches 1 if score @s InGame matches 0 run tag @s remove attacker
+execute as @a[team=!Admin,team=!Owner] if score playing playing matches 1 if score @s InGame matches 0 run tag @s remove defender
 
 bossbar set minecraft:12 players @a
 bossbar set minecraft:12 name [{"text":"--- ","color":"gray"},{"text":"Purple | ","color":"dark_purple"},{"score":{"name":"Purple","objective":"Wins"},"color":"#d285ff","bold":true},{"text":" - ","bold":true,"color":"dark_gray"},{"score":{"name":"Yellow","objective":"Wins"},"color":"#fffeb4","bold":true},{"text":" | Yellow","color":"yellow"} ,{"text":" ---","color":"gray"}]

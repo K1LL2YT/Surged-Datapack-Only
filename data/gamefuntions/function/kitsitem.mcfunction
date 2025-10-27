@@ -41,6 +41,6 @@ execute as @a[tag=engineer,team=!Admin,team=!Owner] at @s run give @s bow[unbrea
 execute as @a[tag=engineer,team=!Admin,team=!Owner] at @s run item replace entity @s container.9 with arrow[unbreakable={show_in_tooltip:false}] 1
 
 # Bomb/Shears/Ults
-give @r[team=Yellow] carrot_on_a_stick[item_name='{"bold":true,"color":"blue","text":"Shockwave"}',lore=['{"color":"red","text":"Plant on the Site by crouching for 5 seconds."}'],custom_model_data=1] 1
-give @a[team=Purple] shears
+give @r[tag=attacker] carrot_on_a_stick[item_name='{"bold":true,"color":"blue","text":"Shockwave"}',lore=['{"color":"red","text":"Plant on the Site by crouching for 5 seconds."}'],custom_model_data=1] 1
+give @a[tag=defender] shears
 execute as @a if score @s hasult matches 1.. run give @s warped_fungus_on_a_stick

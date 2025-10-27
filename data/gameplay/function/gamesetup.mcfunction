@@ -1,24 +1,24 @@
 # Tp Plyaers
 
 ## Map 1
-execute as @a[team=Yellow] if score mapselect mapselect matches 1 at @s run tp 94.00 -35.00 -107.00
-execute as @a[team=Purple] if score mapselect mapselect matches 1 at @s run tp 12.00 -35.00 -107.00
+execute as @a[tag=attacker] if score mapselect mapselect matches 1 at @s run tp 94.00 -35.00 -107.00
+execute as @a[tag=defender] if score mapselect mapselect matches 1 at @s run tp 12.00 -35.00 -107.00
 clear @a[team=!Admin,team=!Owner]
 ## Map 2
-execute as @a[team=Yellow] if score mapselect mapselect matches 2 at @s run tp 174 -27 92
-execute as @a[team=Purple] if score mapselect mapselect matches 2 at @s run tp 174 -27 -33
+execute as @a[tag=attacker] if score mapselect mapselect matches 2 at @s run tp 174 -27 92
+execute as @a[tag=defender] if score mapselect mapselect matches 2 at @s run tp 174 -27 -33
 clear @a[team=!Admin,team=!Owner]
 ## Map 3
-execute as @a[team=Yellow] if score mapselect mapselect matches 3 at @s run tp -103 -43 -110
-execute as @a[team=Purple] if score mapselect mapselect matches 3 at @s run tp -274 -38.00 -129
+execute as @a[tag=attacker] if score mapselect mapselect matches 3 at @s run tp -103 -43 -110
+execute as @a[tag=defender] if score mapselect mapselect matches 3 at @s run tp -274 -38.00 -129
 clear @a[team=!Admin,team=!Owner]
 ## Map 4
-execute as @a[team=Yellow] if score mapselect mapselect matches 4 at @s run tp 52 -31 130
-execute as @a[team=Purple] if score mapselect mapselect matches 4 at @s run tp 26 -31 235
+execute as @a[tag=attacker] if score mapselect mapselect matches 4 at @s run tp 52 -31 130
+execute as @a[tag=defender] if score mapselect mapselect matches 4 at @s run tp 26 -31 235
 clear @a[team=!Admin,team=!Owner]
 ## Map 5
-execute as @a[team=Yellow] if score mapselect mapselect matches 5 at @s run tp 158 -24 -179
-execute as @a[team=Purple] if score mapselect mapselect matches 5 at @s run tp 266 -24 -179
+execute as @a[tag=attacker] if score mapselect mapselect matches 5 at @s run tp 158 -24 -179
+execute as @a[tag=defender] if score mapselect mapselect matches 5 at @s run tp 266 -24 -179
 clear @a[team=!Admin,team=!Owner]
 
 

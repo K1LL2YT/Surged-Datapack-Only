@@ -1,2 +1,2 @@
-execute if score Purple Wins matches 6 run function teams:gamedefenders
-execute if score Yellow Wins matches 6 run function teams:gameattackers
+execute if score Purple Wins = Wins RoundsToWin run function teams:gamepurple
+execute if score Yellow Wins = Wins RoundsToWin run function teams:gameyellow
