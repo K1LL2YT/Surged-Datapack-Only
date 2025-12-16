@@ -32,6 +32,7 @@ execute as @a[tag=sword] if score @s click matches 1.. at @s run clear @s minecr
 
 ## Engineer
 execute as @a[tag=engineer] if score @s click matches 1.. at @s run effect give @s minecraft:speed 30 1 true
+execute as @a[tag=engineer] if score @s click matches 1.. at @s run effect give @s minecraft:speed 30 1 true
 execute as @a[tag=engineer] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Healer
@@ -55,13 +56,31 @@ execute as @a[team=Yellow,tag=splasher] if score @s click matches 1.. at @s run 
 ## Quickcharge
 execute as @a[tag=quick] if score @s click matches 1.. at @s run help
 execute as @a[tag=quick] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
-execute as @a[tag=quick] if score @s ult matches 1.. at @s run give @s crossbow[damage=465,charged_projectiles=[{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:poison"}}}]] 3
+execute as @a[tag=quick] if score @s click matches 1.. at @s run give @s crossbow[damage=464,charged_projectiles=[{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_poison"}}}]] 3
 
 ## Multishot
 execute as @a[tag=multi] if score @s click matches 1.. at @s run help
 execute as @a[tag=multi] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 execute as @a[tag=multi] if score @s ult matches 1.. at @s run item replace entity @s container.8 with crossbow[damage=465,charged_projectiles=[{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:2,explosions:[{shape:"large_ball",colors:[I;16711680]}]}}}]] 1
 execute as @a[tag=multi] if score @s click matches 1.. run scoreboard players set @s ult 100
+
+## Ninja
+### Purple
+execute as @a[team=Purple,tag=ninja] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:invisibility 10 0 true
+execute as @a[team=Purple,tag=ninja] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
+
+### Yellow
+execute as @a[team=Yellow,tag=ninja] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:invisibility 10 0 true
+execute as @a[team=Yellow,tag=ninja] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
+
+## Juggernaunt
+### Purple
+execute as @a[team=Purple,tag=jugg] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:resistance 10 2 true
+execute as @a[team=Purple,tag=jugg] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
+
+### Yellow
+execute as @a[team=Yellow,tag=jugg] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:resistance 10 2 true
+execute as @a[team=Yellow,tag=jugg] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 # Reset
 execute as @a if score @s click matches 1.. run scoreboard players add @s careerults 1

@@ -18,9 +18,9 @@ execute as @a if score mapselect mapselect matches 3 if score tutorial tutorial 
 execute if score mapselect mapselect matches 3 if score tutorial tutorial matches 701 run title @a subtitle {"text":"ʙᴜɪʟᴅ ʙʏ: ᴊᴜᴢᴛᴋɪʟʟᴢ, ѕᴍᴀʀѕɪᴀɴ, & ɢᴀᴍɪɴɢɢᴜʏ","italic":true,"color":"gray"}
 execute if score mapselect mapselect matches 3 if score tutorial tutorial matches 701 run title @a title {"text":"ᴅᴏᴏʀѕ","bold":true,"color":"gold"}
 
-execute as @a if score mapselect mapselect matches 3 if score camera camera matches 1 at @s run tp @a -184 -42 -91 79 -9
-execute as @a if score mapselect mapselect matches 3 if score camera camera matches 2 at @s run tp @a -192 -38 -138 -180 -8
-execute as @a if score mapselect mapselect matches 3 if score camera camera matches 3 at @s run tp @a -106 -42 -113 67 1
+execute as @a if score mapselect mapselect matches 3 if score camera camera matches 1 at @s run tp @a[team=!Admin,team=!Owner] -184 -42 -91 79 -9
+execute as @a if score mapselect mapselect matches 3 if score camera camera matches 2 at @s run tp @a[team=!Admin,team=!Owner] -192 -38 -138 -180 -8
+execute as @a if score mapselect mapselect matches 3 if score camera camera matches 3 at @s run tp @a[team=!Admin,team=!Owner] -106 -42 -113 67 1
 
 execute if score mapselect mapselect matches 3 if score tutorial tutorial = cam1 tutorial run scoreboard players set camera camera 1
 execute if score mapselect mapselect matches 3 if score tutorial tutorial = cam2 tutorial run scoreboard players set camera camera 2

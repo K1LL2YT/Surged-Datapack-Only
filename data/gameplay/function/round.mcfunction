@@ -10,6 +10,7 @@
 # Start Game
 execute as @a if score playing playing matches 0 at @s run effect give @a[team=!Admin,team=!Owner] weakness 1 255 true
 execute as @a if score playing playing matches 1 unless score preround preround = preroundstop preround at @s run effect give @a[team=!Admin,team=!Owner] weakness 1 255 true
+execute as @a if score playing playing matches 1 unless score preround preround = preroundstop preround at @s run effect give @a[team=!Admin,team=!Owner] regeneration 1 255 true
 
 execute as @a if score playing playing matches 1 run gamemode spectator @a[team=spec]
 
@@ -42,3 +43,4 @@ execute as @a at @s if score round round matches 3000 if score mapselect mapsele
 execute as @a at @s if score round round matches 355 if score mapselect mapselect matches 4 run stopsound @a
 execute as @a at @s if score round round matches 355 if score mapselect mapselect matches 4 run playsound minecraft:ost.hurryupresults voice @s ~ ~ ~ 0.1
 execute as @a at @s if score round round matches 3000 if score mapselect mapselect matches 5 run playsound minecraft:ost.midround voice @s ~ ~ ~ 0.1
+execute as @a at @s if score round round matches 3000 if score mapselect mapselect matches 6 run playsound minecraft:ost.midround voice @s ~ ~ ~ 0.1

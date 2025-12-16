@@ -3,7 +3,7 @@ schedule clear gameplay:gamesetup
 schedule clear ui:fadeui
 schedule clear gameplay:switchsides
 title @a times 0s 3s 3s
-title @a title {"text":"Purple Take it Home","bold":true,"color":"dark_purple"}
+title @a title {"text":"Volts Take it Home","bold":true,"color":"dark_purple"}
 title @a subtitle {"text":"ɢɢ'ѕ","bold":true,"color":"gray"}
 execute as @a at @s run playsound minecraft:sfx.gameend record @s ~ ~ ~ 0.5
 scoreboard players set Purple Wins 0
@@ -20,6 +20,11 @@ scoreboard players add @a[team=Purple] wongame 1
 scoreboard players add @a[team=Yellow] lostgame 1
 scoreboard players add @a[team=Purple] careerwins 1
 scoreboard players add @a[team=Yellow] careerlose 1
+kill @e[type=area_effect_cloud]
+
+tag @a remove attacker
+tag @a remove defender
+effect clear @a[team=!Admin,team=!Owner]
 
 execute as @a[team=Yellow,tag=KillzPack] at @s run function killzvp:gameloseyellow
 execute as @a[team=Purple,tag=KillzPack] at @s run function killzvp:gamewinpurple

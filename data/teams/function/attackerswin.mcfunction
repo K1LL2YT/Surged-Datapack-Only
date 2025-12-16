@@ -3,8 +3,8 @@ schedule clear teams:defenderswin
 
 # Title
 title @a times 0s 2s 1s
-execute if score Side RoundsToSwitch matches 1 run title @a title {"text":"Attacker Win","bold":true,"color":"yellow"}
-execute if score Side RoundsToSwitch matches 2 run title @a title {"text":"Attacker Win","bold":true,"color":"dark_purple"}
+execute if score Side RoundsToSwitch matches 1 run title @a title {"text":"Zappers Win","bold":true,"color":"yellow"}
+execute if score Side RoundsToSwitch matches 2 run title @a title {"text":"Volts Win","bold":true,"color":"dark_purple"}
 title @a subtitle {"text":"ɢᴇᴛ ʀᴇᴀᴅʏ ꜰᴏʀ ᴛʜᴇ ɴᴇxᴛ ʀᴏᴜɴᴅ...","bold":true,"color":"gray"}
 # SFX
 execute as @a[tag=attacker] at @s run playsound minecraft:sfx.success record @s ~ ~ ~ 0.5
@@ -25,6 +25,8 @@ kill @e[type=item,name="Carrot on a Stick"]
 kill @e[tag=Yellowrecontower]
 kill @e[tag=Purplerecontower]
 scoreboard players set @a killstreak 0
+kill @e[type=area_effect_cloud]
+effect clear @a[team=!Admin,team=!Owner]
 
 execute as @a[tag=attacker,tag=KillzPack] at @s run function killzvp:winyellow
 execute as @a[tag=defender,tag=KillzPack] at @s run function killzvp:losepurple

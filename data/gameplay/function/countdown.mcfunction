@@ -78,3 +78,6 @@ execute if score mapselect mapselect matches 5 if score preround preround matche
 execute if score mapselect mapselect matches 5 if score preround preround matches 40 run fill 263 -22 -178 263 -24 -180 orange_stained_glass replace red_stained_glass
 execute if score mapselect mapselect matches 5 if score preround preround matches 20 run fill 263 -22 -178 263 -24 -180 yellow_stained_glass replace orange_stained_glass
 execute if score mapselect mapselect matches 5 if score preround preround matches 0 run fill 263 -22 -178 263 -24 -180 structure_void replace yellow_stained_glass
+
+execute if score mapselect mapselect matches 6 if score preround preround matches 0 run fill -121 -56 466 -125 -59 466 minecraft:structure_void replace iron_bars
+execute if score mapselect mapselect matches 6 if score preround preround matches 0 run fill -121 -56 295 -125 -59 295 minecraft:structure_void replace iron_bars

@@ -20,7 +20,10 @@ clear @a[team=!Admin,team=!Owner]
 execute as @a[tag=attacker] if score mapselect mapselect matches 5 at @s run tp 158 -24 -179
 execute as @a[tag=defender] if score mapselect mapselect matches 5 at @s run tp 266 -24 -179
 clear @a[team=!Admin,team=!Owner]
-
+## Map 6
+execute as @a[tag=attacker] if score mapselect mapselect matches 6 at @s run tp -123 -59 469
+execute as @a[tag=defender] if score mapselect mapselect matches 6 at @s run tp -123 -59 292
+clear @a[team=!Admin,team=!Owner]
 
 # Giving Items
 function gamefuntions:kitsitem
@@ -42,5 +45,6 @@ execute if score mapselect mapselect matches 3 run fill -262 -35 -138 -263 -37 -
 execute if score mapselect mapselect matches 5 run fill 161 -22 -180 161 -24 -178 black_stained_glass replace minecraft:structure_void
 execute if score mapselect mapselect matches 5 run fill 263 -22 -178 263 -24 -180 black_stained_glass replace minecraft:structure_void
 
-
+execute if score mapselect mapselect matches 6 run fill -121 -56 466 -125 -59 466 iron_bars replace minecraft:structure_void
+execute if score mapselect mapselect matches 6 run fill -121 -56 295 -125 -59 295 iron_bars replace minecraft:structure_void
 gamemode adventure @a[team=!Admin,team=!spec,team=!Owner]

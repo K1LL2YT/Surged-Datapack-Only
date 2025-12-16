@@ -12,7 +12,7 @@ execute as @a[scores={defusing=140..}] at @s run scoreboard players add @s caree
 execute as @a[scores={defusing=140..}] at @s run scoreboard players set bomb bomb 0
 execute as @a[scores={defusing=140..}] at @s run stopsound @a
 execute as @a[scores={defusing=140..}] at @s run scoreboard players set round round 0
-execute as @a[scores={defusing=140..}] at @s run scoreboard players set @s defusing 0
+execute as @a[scores={defusing=140..}] at @s run scoreboard players set @a defusing 0
 
 # Defusing Timer
 execute as @a[scores={defusing=1..19}] at @s run title @s title {"text":"7s","bold":true,"color":"red"}
