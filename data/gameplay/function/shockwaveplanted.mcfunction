@@ -7,6 +7,7 @@ execute as @a if score mapselect mapselect matches 3 at @s run playsound minecra
 execute as @a if score mapselect mapselect matches 4 at @s run playsound minecraft:ost.hurryupfull voice @s ~ ~ ~ 0.1
 execute as @a if score mapselect mapselect matches 5 at @s run playsound minecraft:ost.planted voice @s ~ ~ ~ 0.1
 execute as @a if score mapselect mapselect matches 6 at @s run playsound minecraft:ost.planted voice @s ~ ~ ~ 0.1
+execute as @a if score mapselect mapselect matches 7 at @s run playsound minecraft:ost.planted voice @s ~ ~ ~ 0.1
 execute as @a at @s run playsound minecraft:sfx.neworder voice @s ~ ~ ~
 scoreboard players set bombsound bomb 20
 scoreboard players set round round 1000

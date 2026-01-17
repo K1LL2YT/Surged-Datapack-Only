@@ -4,6 +4,7 @@
         "ui:kdtitle",
         "ui:kd",
         "ui:killtitle",
+        "gamefuntions:ninjastuff",
         "gameplay:planting",
         "gameplay:defusing",
         "gameplay:round",
@@ -20,6 +21,7 @@
         "tutorials:ttreasure",
         "tutorials:tswitchback",
         "tutorials:tfactory",
+        "tutorials:twinterwarfare",
         "achievements:award",
         "gamefuntions:lobbyitems"
     ]

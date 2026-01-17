@@ -44,3 +44,4 @@ execute as @a at @s if score round round matches 355 if score mapselect mapselec
 execute as @a at @s if score round round matches 355 if score mapselect mapselect matches 4 run playsound minecraft:ost.hurryupresults voice @s ~ ~ ~ 0.1
 execute as @a at @s if score round round matches 3000 if score mapselect mapselect matches 5 run playsound minecraft:ost.midround voice @s ~ ~ ~ 0.1
 execute as @a at @s if score round round matches 3000 if score mapselect mapselect matches 6 run playsound minecraft:ost.midround voice @s ~ ~ ~ 0.1
+execute as @a at @s if score round round matches 3000 if score mapselect mapselect matches 7 run playsound minecraft:ost.midround voice @s ~ ~ ~ 0.1

@@ -27,12 +27,12 @@ execute as @a[team=Purple,tag=recon] if score @s click matches 1.. run effect gi
 execute as @a[team=Purple,tag=recon] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Melee
-execute as @a[tag=sword] if score @s click matches 1.. at @s run effect give @s minecraft:strength 5 1 true
+execute as @a[tag=sword] if score @s click matches 1.. at @s run effect give @s minecraft:strength 5 0 true
 execute as @a[tag=sword] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Engineer
 execute as @a[tag=engineer] if score @s click matches 1.. at @s run effect give @s minecraft:speed 30 1 true
-execute as @a[tag=engineer] if score @s click matches 1.. at @s run effect give @s minecraft:speed 30 1 true
+execute as @a[tag=engineer] if score @s click matches 1.. at @s run effect give @s minecraft:resistance 30 1 true
 execute as @a[tag=engineer] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Healer
@@ -66,20 +66,20 @@ execute as @a[tag=multi] if score @s click matches 1.. run scoreboard players se
 
 ## Ninja
 ### Purple
-execute as @a[team=Purple,tag=ninja] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:invisibility 10 0 true
+execute as @a[team=Purple,tag=ninja] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:invisibility 10 0 true
 execute as @a[team=Purple,tag=ninja] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ### Yellow
-execute as @a[team=Yellow,tag=ninja] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:invisibility 10 0 true
+execute as @a[team=Yellow,tag=ninja] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:invisibility 10 0 true
 execute as @a[team=Yellow,tag=ninja] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ## Juggernaunt
 ### Purple
-execute as @a[team=Purple,tag=jugg] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:resistance 10 2 true
+execute as @a[team=Purple,tag=jugg] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:resistance 10 2 true
 execute as @a[team=Purple,tag=jugg] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 ### Yellow
-execute as @a[team=Yellow,tag=jugg] if score @s click matches 1.. at @s run effect give @a[team=Purple] minecraft:resistance 10 2 true
+execute as @a[team=Yellow,tag=jugg] if score @s click matches 1.. at @s run effect give @a[team=Yellow] minecraft:resistance 10 2 true
 execute as @a[team=Yellow,tag=jugg] if score @s click matches 1.. at @s run clear @s minecraft:warped_fungus_on_a_stick
 
 # Reset

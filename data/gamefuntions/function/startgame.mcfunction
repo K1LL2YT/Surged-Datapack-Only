@@ -22,6 +22,8 @@ execute if score mapselect mapselect matches 5 run scoreboard players set tutori
 execute if score mapselect mapselect matches 5 run schedule function tutorials:tswitchback 2s append
 execute if score mapselect mapselect matches 6 run scoreboard players set tutorial tutorial 901
 execute if score mapselect mapselect matches 6 run schedule function tutorials:tfactory 2s append
+execute if score mapselect mapselect matches 7 run scoreboard players set tutorial tutorial 901
+execute if score mapselect mapselect matches 7 run schedule function tutorials:twinterwarfare 2s append
 effect give @a instant_health 1 200
 execute as @a run scoreboard players set @s hasult 0
 execute as @a run scoreboard players set @s ultkill 0

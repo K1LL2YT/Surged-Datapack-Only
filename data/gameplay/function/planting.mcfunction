@@ -12,8 +12,8 @@ execute as @a[scores={planting=100..}] at @s run clear @s minecraft:carrot_on_a_
 execute as @a[scores={planting=100..}] at @s run function gameplay:shockwaveplanted
 execute as @a[scores={planting=100..}] at @s run summon armor_stand ~ ~ ~ {Silent:1b,Glowing:1b,Invulnerable:1b,Invisible:1b,Marker:1b,Tags:["bomb"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":1}}]}
 execute as @a[scores={planting=100..}] at @s run scoreboard players set bomb bomb 1
-execute as @a[scores={planting=100..}] at @s run scoreboard players add @s crplant 1
-execute as @a[scores={planting=100..}] at @s run scoreboard players add @s careerplants 1
+execute as @a[scores={planting=100}] at @s run scoreboard players add @s crplant 1
+execute as @a[scores={planting=100}] at @s run scoreboard players add @s careerplants 1
 execute as @a[scores={planting=100..}] at @s run scoreboard players set @s planting 0
 execute as @a[scores={sneaktime=1..}] at @s run scoreboard players set @s sneaktime 0
 

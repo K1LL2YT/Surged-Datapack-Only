@@ -7,8 +7,8 @@ execute as @a at @e[type=armor_stand,sort=nearest,limit=1,tag=bomb] if entity @s
 # When Finished
 execute as @a[scores={defusing=140..}] at @s run function gameplay:shockwavedefused
 execute as @a[scores={defusing=140..}] at @s run kill @e[tag=bomb]
-execute as @a[scores={defusing=140..}] at @s run scoreboard players add @s crdefuse 1
-execute as @a[scores={defusing=140..}] at @s run scoreboard players add @s careerdefuses 1
+execute as @a[scores={defusing=140}] at @s run scoreboard players add @s crdefuse 1
+execute as @a[scores={defusing=140}] at @s run scoreboard players add @s careerdefuses 1
 execute as @a[scores={defusing=140..}] at @s run scoreboard players set bomb bomb 0
 execute as @a[scores={defusing=140..}] at @s run stopsound @a
 execute as @a[scores={defusing=140..}] at @s run scoreboard players set round round 0
